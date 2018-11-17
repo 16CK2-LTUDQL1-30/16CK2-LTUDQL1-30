@@ -162,5 +162,20 @@ namespace CustomerDTO
                 _Fax = value;
             }
         }
+        //hàm dựng có tham số
+        public Customer(string customerId, string companyName, string contactname, string contactTitle, string address, string city, string region, string postalCode, string country, string phone, string fax)
+        {
+            this.customerId = customerId;
+            this.companyName = companyName;
+            this.contactName = contactName;
+            this.contactTitle = contactTitle;
+            this.address = adddress;
+            this.city = city;
+            this.region = region;
+            this.postalCode = postalCode;
+            this.country = country;
+            this.phone = phone;
+            this.fax = fax;
+        }
     }
 }
