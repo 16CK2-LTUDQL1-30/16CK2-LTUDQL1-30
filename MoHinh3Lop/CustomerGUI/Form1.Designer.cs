@@ -42,10 +42,15 @@
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbCustomerDeTail = new System.Windows.Forms.GroupBox();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.cbbCountry = new System.Windows.Forms.ComboBox();
             this.cbbCity = new System.Windows.Forms.ComboBox();
             this.txtbPostalCode = new System.Windows.Forms.TextBox();
+            this.txtbAddress = new System.Windows.Forms.TextBox();
             this.txtbRegion = new System.Windows.Forms.TextBox();
+            this.txtFax = new System.Windows.Forms.TextBox();
             this.txtbPhone = new System.Windows.Forms.TextBox();
             this.txtbContactTitle = new System.Windows.Forms.TextBox();
             this.txtbContactName = new System.Windows.Forms.TextBox();
@@ -62,11 +67,6 @@
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblContactTitle = new System.Windows.Forms.Label();
             this.lblCustomerID = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.txtFax = new System.Windows.Forms.TextBox();
-            this.txtbAddress = new System.Windows.Forms.TextBox();
             this.gbCustomerInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCustomer)).BeginInit();
             this.gbCustomerDeTail.SuspendLayout();
@@ -218,6 +218,34 @@
             this.gbCustomerDeTail.TabIndex = 1;
             this.gbCustomerDeTail.TabStop = false;
             this.gbCustomerDeTail.Text = "Customer Details";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(1314, 186);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 39);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(1154, 186);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 39);
+            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(978, 186);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 39);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "Add ";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // cbbCountry
             // 
@@ -568,12 +596,27 @@
             this.txtbPostalCode.Size = new System.Drawing.Size(258, 29);
             this.txtbPostalCode.TabIndex = 1;
             // 
+            // txtbAddress
+            // 
+            this.txtbAddress.Location = new System.Drawing.Point(675, 26);
+            this.txtbAddress.Name = "txtbAddress";
+            this.txtbAddress.Size = new System.Drawing.Size(258, 29);
+            this.txtbAddress.TabIndex = 1;
+            // 
             // txtbRegion
             // 
             this.txtbRegion.Location = new System.Drawing.Point(675, 139);
             this.txtbRegion.Name = "txtbRegion";
             this.txtbRegion.Size = new System.Drawing.Size(258, 29);
             this.txtbRegion.TabIndex = 1;
+            // 
+            // txtFax
+            // 
+            this.txtFax.Location = new System.Drawing.Point(1131, 139);
+            this.txtFax.Name = "txtFax";
+            this.txtFax.Size = new System.Drawing.Size(258, 29);
+            this.txtFax.TabIndex = 1;
+            this.txtFax.TextChanged += new System.EventHandler(this.txtbPhone_TextChanged);
             // 
             // txtbPhone
             // 
@@ -710,48 +753,6 @@
             this.lblCustomerID.TabIndex = 0;
             this.lblCustomerID.Text = "CustomerID:";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(978, 186);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 39);
-            this.btnAdd.TabIndex = 3;
-            this.btnAdd.Text = "Add ";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(1154, 186);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 39);
-            this.btnUpdate.TabIndex = 3;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(1314, 186);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 39);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // txtFax
-            // 
-            this.txtFax.Location = new System.Drawing.Point(1131, 139);
-            this.txtFax.Name = "txtFax";
-            this.txtFax.Size = new System.Drawing.Size(258, 29);
-            this.txtFax.TabIndex = 1;
-            this.txtFax.TextChanged += new System.EventHandler(this.txtbPhone_TextChanged);
-            // 
-            // txtbAddress
-            // 
-            this.txtbAddress.Location = new System.Drawing.Point(675, 26);
-            this.txtbAddress.Name = "txtbAddress";
-            this.txtbAddress.Size = new System.Drawing.Size(258, 29);
-            this.txtbAddress.TabIndex = 1;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -761,6 +762,7 @@
             this.Controls.Add(this.gbCustomerInfor);
             this.Name = "frmMain";
             this.Text = "Manage Customer";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.gbCustomerInfor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCustomer)).EndInit();
             this.gbCustomerDeTail.ResumeLayout(false);
