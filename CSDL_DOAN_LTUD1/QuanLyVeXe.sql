@@ -5,15 +5,15 @@ go
 ---Tiến hành tạo bảng Trạm trung gian
 create table Tram_trung_gian
 (
-	Tuyen_ID_Tuyen int not null,
-	Tram_ID_Tram int not null,
-	Thu_tu int,
+	Tuyen_ID_Tuyen nchar(10) not null,
+	Tram_ID_Tram nchar(10) not null,
+	Thu_tu nchar(10),
 	primary key(Tuyen_ID_Tuyen, Tram_ID_Tram)
 )
 ---Tạo bảng Trạm
 create table Tram
 (
-	ID_Tram int primary key,
+	ID_Tram nchar(10) primary key,
 	TenTram nvarchar(4000),
 	Dia_Diem nvarchar(4000),
 
@@ -21,41 +21,41 @@ create table Tram
 --Tạo bảng Tuyến
 create table Tuyen
 (
-	ID_Tuyen int primary key,
+	ID_Tuyen nchar(10) primary key,
 	KhoangCach int,
-	ThoiGianChay int,
-	Tram_ID_Tram1 int,
-	Tram_ID_Tram int,
+	ThoiGianChay nchar(10),
+	Tram_ID_Tram1 nchar(10),
+	Tram_ID_Tram nchar(10),
 )
 --Tạo bảng tài xế
 create table Tai_xe
 (
-	ID_TaiXe int primary key,
+	ID_TaiXe nchar(10) primary key,
 	TenTaiXe nvarchar(4000),
 	BangLai nvarchar(4000),
 )
 --Tạo bảng chuyến
 create table Chuyen
 (
-	ID_Chuyen int primary key,
+	ID_Chuyen nchar(10) primary key,
 	Tuyen_ID_Tuyen int,
 	Gio_khoi_hanh date,
 	Ghi_chu nvarchar(4000),
-	Xe_XeID int,
-	Tai_xe_ID_TaiXe int,
+	Xe_XeID nchar(10),
+	Tai_xe_ID_TaiXe nchar(10),
 )
 --Tạo bảng xe
 create table Xe
 (
-	XeID int primary key,
+	XeID nchar(10) primary key,
 	TenXe nvarchar(4000),
 	So_dang_ky varchar(4000),
-	LoaiXe_ID_LoaiXe int,
+	LoaiXe_ID_LoaiXe nchar(10),
 )
 --Tạo bảng loại xe
 create table LoaiXe
 (
-	ID_LoaiXe int primary key,
+	ID_LoaiXe nchar(10) primary key,
 	TenLoai nvarchar(4000),
 )
 --Tạo bảng ghế
@@ -66,28 +66,28 @@ create table Ghe
 	Cot_colum int,
 	Tang int,
 	So_ghe int,
-	Xe_XeID int,
+	Xe_XeID nchar(10),
 )
 --Tạo bảng Vé
 create table Ve
 (
-	ID_Ve int,
+	ID_Ve nchar(10),
 	Ghe_ID_Ghe int,
-	Chuyen_ID_Chuyen int,
-	TinhTrang int,
+	Chuyen_ID_Chuyen nchar(10),
+	TinhTrang nchar(10),
 	GiaTien float,
-	KhachHang_ID_KhachHang int,
+	KhachHang_ID_KhachHang nchar(10),
 	NgayXuatVe date,
 	GhiChu nvarchar(4000),
 )
 --Tạo bảng khách hàng
 create table KhachHang
 (
-	ID_KhachHang int primary key,
+	ID_KhachHang nchar(10) primary key,
 	HoTen nvarchar(4000),
 	DienThoai nvarchar(4000),
 	Email nvarchar(4000),
-	Loai int,
+	Loai nchar(10),
 )
 --Tạo khóa ngoại giữa Tram Trung Gian và Tram
 alter table Tram_trung_gian add constraint FK_Tram_trung_gian_Tram foreign key (Tram_ID_Tram) references Tram (ID_Tram)
