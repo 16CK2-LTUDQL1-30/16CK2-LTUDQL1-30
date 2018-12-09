@@ -1,16 +1,14 @@
-﻿create database QuanLyVeXe_LTUD1
+create database QL_VeXe
 go
-use QuanLyVeXe_LTUD1
+use QL_VeXe
 go
----Tiến hành tạo bảng Trạm trung gian
 create table Tram_trung_gian
 (
 	Tuyen_ID_Tuyen nchar(10) not null,
 	Tram_ID_Tram nchar(10) not null,
-	Thu_tu nchar(10),
+	Thu_tu int,
 	primary key(Tuyen_ID_Tuyen, Tram_ID_Tram)
 )
----Tạo bảng Trạm
 create table Tram
 (
 	ID_Tram nchar(10) primary key,
@@ -38,8 +36,8 @@ create table Tai_xe
 create table Chuyen
 (
 	ID_Chuyen nchar(10) primary key,
-	Tuyen_ID_Tuyen int,
-	Gio_khoi_hanh date,
+	Tuyen_ID_Tuyen nchar(10),
+	Gio_khoi_hanh datetime,
 	Ghi_chu nvarchar(4000),
 	Xe_XeID nchar(10),
 	Tai_xe_ID_TaiXe nchar(10),
@@ -61,7 +59,7 @@ create table LoaiXe
 --Tạo bảng ghế
 create table Ghe
 (
-	ID_Ghe int primary key,
+	ID_Ghe nchar(10) primary key,
 	Dong int,
 	Cot_colum int,
 	Tang int,
@@ -72,12 +70,12 @@ create table Ghe
 create table Ve
 (
 	ID_Ve nchar(10),
-	Ghe_ID_Ghe int,
+	Ghe_ID_Ghe nchar(10),
 	Chuyen_ID_Chuyen nchar(10),
 	TinhTrang nchar(10),
 	GiaTien float,
 	KhachHang_ID_KhachHang nchar(10),
-	NgayXuatVe date,
+	NgayXuatVe datetime,
 	GhiChu nvarchar(4000),
 )
 --Tạo bảng khách hàng
