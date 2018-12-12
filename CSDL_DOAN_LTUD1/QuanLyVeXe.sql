@@ -69,7 +69,7 @@ create table Ghe
 --Tạo bảng Vé
 create table Ve
 (
-	ID_Ve nchar(10),
+	ID_Ve nchar(10) primary key,
 	Ghe_ID_Ghe nchar(10),
 	Chuyen_ID_Chuyen nchar(10),
 	TinhTrang nchar(10),
