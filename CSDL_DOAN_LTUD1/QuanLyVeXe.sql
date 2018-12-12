@@ -110,3 +110,14 @@ alter table Ve add constraint FK_Ve_Ghe foreign key(Ghe_ID_Ghe) references Ghe(I
 alter table Ve add constraint FK_Ve_Chuyen foreign key(Chuyen_ID_Chuyen) references Chuyen(ID_Chuyen)
 --Tạo khóa ngoại vé với khách hàng
 alter table Ve add constraint FK_Ve_KhachHang foreign key (KhachHang_ID_KhachHang) references KhachHang(ID_KhachHang)
+--Thêm dữ liệu vào bảng trạm
+insert into Tram(ID_Tram, TenTram, Dia_Diem) values('CD001', N'An Giang', N'Châu Đốc'), ('CD002', N'An Giang', N'Tp.Long Xuyên'), ('CM001', N'Tp.Cà Mau', N'Tp.Cà Mau'),
+('CT001', N'Cần Thơ', N'Tp.Cần Thơ'), ('HCM001', N'Tp.Hồ Chí Minh', N'208, Lê Hồng Phong, Quận 5'), ('HCM002', N'Tp.Hồ Chí Minh', N'210, Lý Thường Kiệt, Quận 10'),
+('HCM003', N'Tp.Hồ Chí Minh', N'số 1, Bến Xe Miền Tây, Quận 6'), ('HCM004', N'Tp.Hồ Chí Minh', N'số 1, Trần Hưng Đạo, Quận 1'),
+('VL001', N'Tp.Vĩnh Long', N'Công viên Trường An, Vĩnh Long'), ('VL002', N'Tp.Vĩnh Long', N'Bắc Mỹ Thuận, Vĩnh Long') 
+--Thêm dữ liệu vào bảng Tuyến
+insert into Tuyen(ID_Tuyen, KhoangCach, ThoiGianChay, Tram_ID_Tram, Tram_ID_Tram1) values('Tuyen001', 173, '4am-7am', 'CT001', 'HCM001'), ('Tuyen002', 180, '5am-8am', 'CT001', 'HCM002'), ('Tuyen003', 174, '6am-10am', 'CT001', 'HCM003'),
+('Tuyen004', 184, '7am-11am', 'CT001', 'HCM004'), ('Tuyen005', 228, '3am-8am', 'CD001', 'CM001'), ('Tuyen006', 230, '5am-10am', 'CD001', 'CM002'), ('Tuyen007', 250, '9am-2pm', 'CD002', 'CM001'), ('Tuyen008', 252, '10am-4pm', 'CD002', 'CM002'),
+('Tuyen009', 180, '4am-8am', 'VL001', 'CM001'), ('Tuyen010', 190, '8am-11am', 'VL001', 'CM002'), ('Tuyen011', 150, '2pm-6pm', 'VL002', 'CM001'), ('Tuyen012', 190, '4am-7am', 'VL002', 'CM002')
+--Thêm dữ liệu vào trạm trung gian
+insert into Tram_trung_gian(Tuyen_ID_Tuyen, Tram_ID_Tram, Thu_tu) values('Tuyen001', 'CT001', 1), ('Tuyen005', 'CD001', 2), ('Tuyen007', 'CD002', 3), ('Tuyen009', 'VL001', 4), ('Tuyen011', 'VL002', 5)
