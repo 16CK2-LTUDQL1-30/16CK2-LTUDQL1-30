@@ -1,6 +1,6 @@
-create database QL_VeXe
+create database QL_VeXeKhach
 go
-use QL_VeXe
+use QL_VeXeKhach
 go
 create table Tram_trung_gian
 (
@@ -93,6 +93,7 @@ alter table Tram_trung_gian add constraint FK_Tram_trung_gian_Tram foreign key (
 alter table Tram_trung_gian add constraint FK_Tram_trung_gian_Tuyen foreign key (Tuyen_ID_Tuyen) references Tuyen(ID_Tuyen)
 --Tạo khóa ngoại giữa tuyến và trạm
 alter table Tuyen add constraint FK_Tuyen_Tram foreign key (Tram_ID_Tram) references Tram(ID_Tram)
+
 alter table Tuyen add constraint FK1_Tuyen_Tram foreign key (Tram_ID_Tram1) references Tram(ID_Tram)
 --Tạo khóa ngoại chuyến với tài xế
 alter table Chuyen add constraint FK_Chuyen_TaiXe foreign key (Tai_xe_ID_TaiXe) references Tai_Xe(ID_TaiXe)
@@ -116,11 +117,11 @@ insert into Tram(ID_Tram, TenTram, Dia_Diem) values('CD001', N'An Giang', N'Châ
 ('HCM003', N'Tp.Hồ Chí Minh', N'số 1, Bến Xe Miền Tây, Quận 6'), ('HCM004', N'Tp.Hồ Chí Minh', N'số 1, Trần Hưng Đạo, Quận 1'),
 ('VL001', N'Tp.Vĩnh Long', N'Công viên Trường An, Vĩnh Long'), ('VL002', N'Tp.Vĩnh Long', N'Bắc Mỹ Thuận, Vĩnh Long') 
 --Thêm dữ liệu vào bảng Tuyến
-insert into Tuyen(ID_Tuyen, KhoangCach, ThoiGianChay, Tram_ID_Tram, Tram_ID_Tram1) values('Tuyen001', 173, '4am-7am', 'CT001', 'HCM001'), ('Tuyen002', 180, '5am-8am', 'CT001', 'HCM002'), ('Tuyen003', 174, '6am-10am', 'CT001', 'HCM003'),
-('Tuyen004', 184, '7am-11am', 'CT001', 'HCM004'), ('Tuyen005', 228, '3am-8am', 'CD001', 'CM001'), ('Tuyen006', 230, '5am-10am', 'CD001', 'CM002'), ('Tuyen007', 250, '9am-2pm', 'CD002', 'CM001'), ('Tuyen008', 252, '10am-4pm', 'CD002', 'CM002'),
-('Tuyen009', 180, '4am-8am', 'VL001', 'CM001'), ('Tuyen010', 190, '8am-11am', 'VL001', 'CM002'), ('Tuyen011', 150, '2pm-6pm', 'VL002', 'CM001'), ('Tuyen012', 190, '4am-7am', 'VL002', 'CM002')
+insert into Tuyen(ID_Tuyen, KhoangCach, ThoiGianChay, Tram_ID_Tram, Tram_ID_Tram1) values('Tuyen001', 173, '4am-7am', 'CD001', 'CM001')
+insert into Tuyen(ID_Tuyen, KhoangCach, ThoiGianChay, Tram_ID_Tram, Tram_ID_Tram1) values('Tuyen002', 173, '4am-7am', 'CT001', 'HCM001'), ('Tuyen003', 180, '5am-8am', 'CT001', 'HCM002'), ('Tuyen004', 174, '6am-10am', 'CT001', 'HCM003'),
+('Tuyen005', 184, '7am-11am', 'CT001', 'HCM004'),('Tuyen006', 250, '9am-2pm', 'CD002', 'CM001'), ('Tuyen007', 180, '4am-8am', 'VL001', 'CM001'), ('Tuyen008', 150, '2pm-6pm', 'VL002', 'CM001')
 --Thêm dữ liệu vào trạm trung gian
-insert into Tram_trung_gian(Tuyen_ID_Tuyen, Tram_ID_Tram, Thu_tu) values('Tuyen001', 'CT001', 1), ('Tuyen005', 'CD001', 2), ('Tuyen007', 'CD002', 3), ('Tuyen009', 'VL001', 4), ('Tuyen011', 'VL002', 5)
+insert into Tram_trung_gian(Tuyen_ID_Tuyen, Tram_ID_Tram, Thu_tu) values('Tuyen001', 'CD001', 1), ('Tuyen002', 'CT001', 2), ('Tuyen006', 'CD002', 3), ('Tuyen007', 'VL001', 4), ('Tuyen008', 'VL002', 5)
 --thêm dữ liệu vào bảng loại xe
 insert into LoaiXe(ID_LoaiXe, TenLoai) values('L001', N'Huyndai Universe'), ('L002', N'Huyndai Aero Space'), ('L003', N'Huyndai Aero Hi Class')
 --Thêm dữ liệu vào bảng Xe
