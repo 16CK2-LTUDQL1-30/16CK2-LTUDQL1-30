@@ -1,0 +1,10 @@
+D:\DoAn_LTUDQL1\Do_An\DAO\bin\Debug\DAO.exe.config
+D:\DoAn_LTUDQL1\Do_An\DAO\bin\Debug\DAO.exe
+D:\DoAn_LTUDQL1\Do_An\DAO\bin\Debug\DAO.pdb
+D:\DoAn_LTUDQL1\Do_An\DAO\bin\Debug\DTO.exe
+D:\DoAn_LTUDQL1\Do_An\DAO\bin\Debug\DTO.pdb
+D:\DoAn_LTUDQL1\Do_An\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\DoAn_LTUDQL1\Do_An\DAO\obj\Debug\DAO.Properties.Resources.resources
+D:\DoAn_LTUDQL1\Do_An\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
+D:\DoAn_LTUDQL1\Do_An\DAO\obj\Debug\DAO.exe
+D:\DoAn_LTUDQL1\Do_An\DAO\obj\Debug\DAO.pdb
