@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
 
 namespace GUI
 {
@@ -30,6 +31,16 @@ namespace GUI
             {
                 Dispose();//thoát chương trình
             }
+        }
+
+        private void dtgvDSChuyen_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gbDSChuyenXe_Enter(object sender, EventArgs e)
+        {
+            UserBUS.Instance.Load_DSChuyen(dtgvDSChuyen);
         }
     }
 }
