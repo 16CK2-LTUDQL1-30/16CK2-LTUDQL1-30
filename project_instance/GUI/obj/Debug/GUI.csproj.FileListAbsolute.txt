@@ -1,0 +1,15 @@
+D:\DoAn_LTUDQL1\Do_An\GUI\bin\Debug\GUI.exe.config
+D:\DoAn_LTUDQL1\Do_An\GUI\bin\Debug\GUI.exe
+D:\DoAn_LTUDQL1\Do_An\GUI\bin\Debug\GUI.pdb
+D:\DoAn_LTUDQL1\Do_An\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\DoAn_LTUDQL1\Do_An\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\DoAn_LTUDQL1\Do_An\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\DoAn_LTUDQL1\Do_An\GUI\obj\Debug\GUI.exe
+D:\DoAn_LTUDQL1\Do_An\GUI\obj\Debug\GUI.pdb
+D:\DoAn_LTUDQL1\Do_An\GUI\obj\Debug\GUI.frmQuanLyVeXe.resources
+D:\DoAn_LTUDQL1\Do_An\GUI\bin\Debug\BUS.exe
+D:\DoAn_LTUDQL1\Do_An\GUI\bin\Debug\BUS.pdb
+D:\DoAn_LTUDQL1\Do_An\GUI\bin\Debug\DAO.exe
+D:\DoAn_LTUDQL1\Do_An\GUI\bin\Debug\DTO.exe
+D:\DoAn_LTUDQL1\Do_An\GUI\bin\Debug\DAO.pdb
+D:\DoAn_LTUDQL1\Do_An\GUI\bin\Debug\DTO.pdb
