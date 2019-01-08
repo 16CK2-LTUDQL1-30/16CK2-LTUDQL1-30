@@ -1,0 +1,28 @@
+D:\DoAn_LTUDQL1\Do_An\BUS\bin\Debug\BUS.exe.config
+D:\DoAn_LTUDQL1\Do_An\BUS\bin\Debug\BUS.exe
+D:\DoAn_LTUDQL1\Do_An\BUS\bin\Debug\BUS.pdb
+D:\DoAn_LTUDQL1\Do_An\BUS\bin\Debug\DAO.exe
+D:\DoAn_LTUDQL1\Do_An\BUS\bin\Debug\DTO.exe
+D:\DoAn_LTUDQL1\Do_An\BUS\bin\Debug\DAO.pdb
+D:\DoAn_LTUDQL1\Do_An\BUS\bin\Debug\DTO.pdb
+D:\DoAn_LTUDQL1\Do_An\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\DoAn_LTUDQL1\Do_An\BUS\obj\Debug\BUS.Properties.Resources.resources
+D:\DoAn_LTUDQL1\Do_An\BUS\obj\Debug\BUS.csproj.GenerateResource.Cache
+D:\DoAn_LTUDQL1\Do_An\BUS\obj\Debug\BUS.exe
+D:\DoAn_LTUDQL1\Do_An\BUS\obj\Debug\BUS.pdb
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\bin\Debug\BUS.exe.config
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\bin\Debug\BUS.exe
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\bin\Debug\BUS.pdb
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\bin\Debug\DAO.exe
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\bin\Debug\DTO.exe
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\bin\Debug\DAO.pdb
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\bin\Debug\DAO.exe.config
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\bin\Debug\DTO.pdb
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\bin\Debug\DTO.exe.config
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\obj\Debug\BUS.exe
+C:\Users\onmyl\Desktop\bài tập\LTUDQL1\Do_An\BUS\obj\Debug\BUS.pdb
